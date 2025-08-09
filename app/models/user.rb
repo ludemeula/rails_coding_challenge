@@ -1,7 +1,7 @@
 
 class User < ApplicationRecord
   # devise modules, mas não todos estão ativados (erro proposital)
-  devise :database_authenticatable, :registerable
+  #devise :database_authenticatable, :registerable
 
   has_many :posts
 
