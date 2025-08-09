@@ -1,0 +1,10 @@
+/log/*
+/tmp/*
+/config/database.yml
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/node_modules
+/yarn-error.log
+.byebug_history
+
