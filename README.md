@@ -23,8 +23,8 @@ Este projeto é uma aplicação Rails 5.2 com PostgreSQL que contém erros propo
 ## Funcionalidades para corrigir e implementar
 
 - Corrigir a configuração do banco (porta errada) ok
-- Ajustar as validações do model User (atualmente permite usuários sem email)
-- Corrigir os controllers para seguirem boas práticas (exemplo: falta de strong params, ações incompletas)
+- Ajustar as validações do model User (atualmente permite usuários sem email) ok
+- Corrigir os controllers para seguirem boas práticas (exemplo: falta de strong params, ações incompletas) ok
 - Implementar corretamente a autenticação com Devise (atualmente não permite login)
 - Completar a associação entre User e Post, corrigir erros nos controllers de Post
 - Ajustar e completar os testes que estão falhando

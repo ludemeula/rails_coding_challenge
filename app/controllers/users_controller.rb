@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user]) # erro: falta .require e .permit
+    @user = User.new(user_params)
     if @user.save
       redirect_to @user, notice: 'User created.'
     else
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update(params[:user]) # erro: falta .require e .permit
+    if @user.update(user_params) 
       redirect_to @user, notice: 'User updated.'
     else
       render :edit
@@ -42,5 +42,9 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation) # exemplo de strong params
   end
 end
